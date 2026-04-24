@@ -2,7 +2,7 @@ from app.core.firebase import db
 
 class AuthRepository:
     def find_by_usuario(self, usuario: str):
-        docs = db.collection("alumnos").where("usuario", "==", usuario).limit(1).stream()
+        docs = db.collection("alumnos").where("usuario", "==", usuario).limit(1).get()
 
         for doc in docs:
             return {"id": doc.id, **doc.to_dict()}
