@@ -1,4 +1,4 @@
-# backend-python-LMP
+# backend-python
 
 A lightweight FastAPI backend for managing students (`alumnos`) with Firebase authentication and JWT-protected endpoints.
 
